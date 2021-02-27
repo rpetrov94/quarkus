@@ -46,6 +46,7 @@ public enum Feature {
     JDBC_DERBY,
     JDBC_H2,
     JDBC_POSTGRESQL,
+    JDBC_SQLITE,
     JDBC_MARIADB,
     JDBC_MSSQL,
     JDBC_MYSQL,

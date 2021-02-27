@@ -23,6 +23,7 @@
         <module>mariadb</module>
         <module>h2</module>
         <module>derby</module>
+        <module>sqlite</module>
     </modules>
 
 </project>

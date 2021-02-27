@@ -1,0 +1,9 @@
+---
+name: "JDBC Driver - SQLite"
+metadata:
+  keywords:
+  - "jdbc-sqlite"
+  - "jdbc"
+  - "sqlite"
+  categories:
+  - "data"

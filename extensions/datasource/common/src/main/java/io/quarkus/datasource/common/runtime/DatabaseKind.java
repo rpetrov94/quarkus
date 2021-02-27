@@ -20,6 +20,7 @@ public final class DatabaseKind {
     public static final String MSSQL = "mssql";
     public static final String MYSQL = "mysql";
     public static final String POSTGRESQL = "postgresql";
+    public static final String SQLITE = "sqlite";
 
     private static final Map<String, String> ALIASES;
 
@@ -79,6 +80,10 @@ public final class DatabaseKind {
         return is(value, POSTGRESQL);
     }
 
+    public static boolean isSQLite(String value) {
+        return is(value, SQLITE);
+    }
+
     private static boolean is(String value, String mainName) {
         if (value == null) {
             return false;
@@ -99,7 +104,8 @@ public final class DatabaseKind {
         MARIADB(DatabaseKind.MARIADB),
         MSSQL(DatabaseKind.MSSQL),
         MYSQL(DatabaseKind.MYSQL),
-        POSTGRESQL(DatabaseKind.POSTGRESQL, "pgsql", "pg");
+        POSTGRESQL(DatabaseKind.POSTGRESQL, "pgsql", "pg"),
+        SQLITE(DatabaseKind.SQLITE);
 
         private final String mainName;
         private final Set<String> aliases;
